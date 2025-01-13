@@ -1,0 +1,175 @@
+/* General Layout */
+.inventory-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.inventory-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Back Button */
+.btn-back {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+/* Inventory Form */
+.inventory-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.inventory-form .input-group {
+  flex: 1 1 calc(33.333% - 10px);
+}
+
+.inventory-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.inventory-form .btn-submit {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inventory-form .btn-submit:hover {
+  background-color: #218838;
+}
+
+/* Inventory List */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.item-card span {
+  flex-grow: 1;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons .btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-buttons .btn-edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.action-buttons .btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.action-buttons .btn-sell {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.action-buttons .btn-sell:hover {
+  background-color: #138496;
+}
+
+.action-buttons .btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-buttons .btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Sell Form */
+.sell-form-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.sell-form-container h3 {
+  margin-bottom: 10px;
+}
+
+.sell-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sell-form-container input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sell-form-container button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sell-form-container .btn-submit {
+  background-color: #28a745;
+  color: white;
+}
+
+.sell-form-container .btn-submit:hover {
+  background-color: #218838;
+}
+
+.sell-form-container .btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.sell-form-container .btn-cancel:hover {
+  background-color: #c82333;
+}

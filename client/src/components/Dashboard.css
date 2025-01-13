@@ -1,0 +1,145 @@
+/* General Layout */
+.dashboard-container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar h3 {
+  margin-top: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar .btn {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+.sidebar .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 260px;
+}
+
+.dashboard-container .open ~ .dashboard-content {
+  margin-left: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Inventory Chart Section */
+.inventory-chart {
+  margin-top: 30px;
+}
+
+.inventory-chart h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Seller Form Section */
+.seller-form-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.seller-form-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.seller-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seller-form-container input,
+.seller-form-container button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.seller-form-container input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.seller-form-container button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seller-form-container .btn-submit {
+  background-color: #28a745;
+  color: white;
+}
+
+.seller-form-container .btn-submit:hover {
+  background-color: #218838;
+}

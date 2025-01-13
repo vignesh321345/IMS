@@ -1,0 +1,16 @@
+# Ignore node modules
+node_modules/
+
+# Ignore environment files
+package-lock.json
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
